@@ -1,0 +1,30 @@
+{
+  "name": "case-builder",
+  "version": "0.0.1",
+  "description": "case builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoveKino/case-builder.git"
+  },
+  "keywords": [
+    "case",
+    "builder",
+    "electron"
+  ],
+  "author": "ddchen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LoveKino/case-builder/issues"
+  },
+  "homepage": "https://github.com/LoveKino/case-builder#readme",
+  "dependencies": {
+    "del": "^3.0.0",
+    "es6-promisify": "^6.0.0",
+    "lodash": "^4.17.10",
+    "mkdirp": "^0.5.1"
+  }
+}
