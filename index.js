@@ -48,8 +48,7 @@ const saveFile = async (filePath, cnt) => {
 };
 
 const getUIAutoConfigContent = (preloadJsPath, options) => {
-  options.webPreferences = options.webPreferences || {};
-  options.webPreferences.preload = preloadJsPath;
+  _.set(options, 'windowConfig.webPreferences.preload', preloadJsPath);
   return `const path = require('path');
 module.exports = ${JSON.stringify(options, null, 4)};`;
 };
