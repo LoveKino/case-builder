@@ -63,7 +63,7 @@ const getPreloadContent = (groupName, from, to, grep) => {
   groupName: '${groupName}',
   from: ${from},
   to: ${to},
-  grep: '${grep}'
+  grep: ${grep? `'${grep}'`: null}
 };`;
 };
 
