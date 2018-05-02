@@ -1,6 +1,6 @@
 {
   "name": "case-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "case builder",
   "main": "index.js",
   "scripts": {
