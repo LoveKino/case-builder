@@ -58,7 +58,7 @@ const getPreloadContent = (groupName, from, to, grep) => {
   return (to === undefined || to === null) ? `window._$test = {
   groupName: '${groupName}',
   from: ${from},
-  grep: '${grep || null}'
+  grep: ${grep? `'${grep}'`: null}
 };` : `window._$test = {
   groupName: '${groupName}',
   from: ${from},
